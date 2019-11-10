@@ -9,12 +9,20 @@ var host = "broker.hivemq.com";
 var port = 8000;
 
 var sslFlag = false;
-
-function MQTTconnect() {
-	console.log('connecting');
-	mqtt = new Paho.MQTT.Client(host, port, "clientjs");
 	
-	var
+function mqttConnectActuator() {
+    mqtt = new Paho.MQTT.Client(host, port, "clientjs");
+    var options = { useSSL: sslFlag, timeout: 3, onSuccess: onConnectActuator };
+    mqtt.connect(options);
+}
+
+function onConnectActuator() {
+    message = new Paho.MQTT.Message("Hello World");
+    message.destinationName = currentActuatorTopic;
+    console.log("Connected Actuator: " + currentActuatorTopic);
+    //hideButtonsLoading();
+    mqtt.send(message);
+}
 
 var source = new EventSource("http://localhost:9090");
 source.onmessage = function(event) {

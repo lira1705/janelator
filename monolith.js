@@ -39,7 +39,7 @@ const watchHCSR04 = () => {
 
 setInterval(() => {
   trigger.trigger(10, 1); // Set trigger high for 10 microseconds
-}, 1000);
+}, 500);
 
 
 function sendDistance(value) {
@@ -105,9 +105,7 @@ motorMQTT.on('message', (topic, message) => {
 	old_value = windowPosition;
     
     
-    
-    // PARA DE MEXER MIZERAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-    //motor.servoWrite(Number(message));
+    motor.servoWrite(Number(message));
     
 })
 

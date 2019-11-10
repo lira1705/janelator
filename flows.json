@@ -1,0 +1,1045 @@
+[
+    {
+        "id": "db7ea651.97d058",
+        "type": "tab",
+        "label": "The Senses",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "7b9f33d4.f4404c",
+        "type": "tab",
+        "label": "Big Brain",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "308e9e89.2d2692",
+        "type": "mqtt-broker",
+        "z": "",
+        "name": "",
+        "broker": "broker.hivemq.com",
+        "port": "1883",
+        "clientid": "",
+        "usetls": false,
+        "compatmode": true,
+        "keepalive": "60",
+        "cleansession": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "closeTopic": "",
+        "closeQos": "0",
+        "closePayload": "",
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": ""
+    },
+    {
+        "id": "651bd513.0e551c",
+        "type": "ui_group",
+        "z": "",
+        "name": "Janelator",
+        "tab": "81f3cff8.c1d5c",
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "81f3cff8.c1d5c",
+        "type": "ui_tab",
+        "z": "",
+        "name": "Home",
+        "icon": "dashboard"
+    },
+    {
+        "id": "908c33bc.ba4c1",
+        "type": "mqtt-broker",
+        "z": "",
+        "broker": "broker.hivemq.com",
+        "port": "1883",
+        "clientid": "",
+        "usetls": false,
+        "compatmode": true,
+        "keepalive": "60",
+        "cleansession": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": ""
+    },
+    {
+        "id": "a94ce97c.28d878",
+        "type": "websocket-client",
+        "z": "",
+        "path": "ws://localhost:8080/move",
+        "tls": "",
+        "wholemsg": "false"
+    },
+    {
+        "id": "b6e49344.d7598",
+        "type": "websocket-listener",
+        "z": "",
+        "path": "ws://localhost:8080/testing",
+        "wholemsg": "false"
+    },
+    {
+        "id": "e1247ba6.38d458",
+        "type": "mqtt-broker",
+        "z": "",
+        "name": "",
+        "broker": "broker.hivemq.com",
+        "port": "1883",
+        "clientid": "",
+        "usetls": false,
+        "compatmode": true,
+        "keepalive": "60",
+        "cleansession": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "closeTopic": "",
+        "closeQos": "0",
+        "closePayload": "",
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": ""
+    },
+    {
+        "id": "f9b873dd.67e8a",
+        "type": "ui_group",
+        "z": "",
+        "name": "Default",
+        "tab": "31cf0feb.b0e9d",
+        "disp": true,
+        "width": "6"
+    },
+    {
+        "id": "31cf0feb.b0e9d",
+        "type": "ui_tab",
+        "z": "",
+        "name": "Home",
+        "icon": "dashboard"
+    },
+    {
+        "id": "19b5871c.a42799",
+        "type": "ui_base",
+        "theme": {
+            "name": "theme-light",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#0094CE",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#097479",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": false
+            },
+            "customTheme": {
+                "name": "Untitled Theme 1",
+                "default": "#4B7930",
+                "baseColor": "#4B7930",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+            },
+            "themeState": {
+                "base-color": {
+                    "default": "#0094CE",
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-titlebar-backgroundColor": {
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-backgroundColor": {
+                    "value": "#fafafa",
+                    "edited": false
+                },
+                "page-sidebar-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-textColor": {
+                    "value": "#1bbfff",
+                    "edited": false
+                },
+                "group-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "widget-textColor": {
+                    "value": "#111111",
+                    "edited": false
+                },
+                "widget-backgroundColor": {
+                    "value": "#0094ce",
+                    "edited": false
+                },
+                "widget-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "base-font": {
+                    "value": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+                }
+            },
+            "angularTheme": {
+                "primary": "indigo",
+                "accents": "blue",
+                "warn": "red",
+                "background": "grey"
+            }
+        },
+        "site": {
+            "name": "Node-RED Dashboard",
+            "hideToolbar": "false",
+            "allowSwipe": "false",
+            "lockMenu": "false",
+            "allowTempTheme": "true",
+            "dateFormat": "DD/MM/YYYY",
+            "sizes": {
+                "sx": 48,
+                "sy": 48,
+                "gx": 6,
+                "gy": 6,
+                "cx": 6,
+                "cy": 6,
+                "px": 0,
+                "py": 0
+            }
+        }
+    },
+    {
+        "id": "f7c0ae8b.204e",
+        "type": "websocket-listener",
+        "z": "",
+        "path": "ws://localhost:8080/moveposition",
+        "wholemsg": "false"
+    },
+    {
+        "id": "383a8b59.c2fb34",
+        "type": "mqtt out",
+        "z": "db7ea651.97d058",
+        "name": "MQTT to janelator/room/rain",
+        "topic": "janelator/room/rain",
+        "qos": "",
+        "retain": "",
+        "broker": "908c33bc.ba4c1",
+        "x": 880,
+        "y": 180,
+        "wires": []
+    },
+    {
+        "id": "812f081e.a216e8",
+        "type": "inject",
+        "z": "db7ea651.97d058",
+        "name": "",
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "repeat": "5",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "x": 130,
+        "y": 100,
+        "wires": [
+            [
+                "3d485a00.78d2d6"
+            ]
+        ]
+    },
+    {
+        "id": "3d485a00.78d2d6",
+        "type": "template",
+        "z": "db7ea651.97d058",
+        "name": "",
+        "field": "payload",
+        "fieldType": "msg",
+        "format": "json",
+        "syntax": "plain",
+        "template": "{\"rain\": 0}",
+        "output": "json",
+        "x": 300,
+        "y": 100,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "c2851118.cfc8a",
+        "type": "mqtt out",
+        "z": "db7ea651.97d058",
+        "name": "MQTT to janelator/room/temperature",
+        "topic": "janelator/room/temperature",
+        "qos": "",
+        "retain": "",
+        "broker": "908c33bc.ba4c1",
+        "x": 910,
+        "y": 400,
+        "wires": []
+    },
+    {
+        "id": "a49d677.ae28698",
+        "type": "inject",
+        "z": "db7ea651.97d058",
+        "name": "",
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "repeat": "6",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "x": 130,
+        "y": 320,
+        "wires": [
+            [
+                "6d1fe73e.2441f8"
+            ]
+        ]
+    },
+    {
+        "id": "6d1fe73e.2441f8",
+        "type": "template",
+        "z": "db7ea651.97d058",
+        "name": "",
+        "field": "payload",
+        "fieldType": "msg",
+        "format": "json",
+        "syntax": "plain",
+        "template": "{\"temperature\": 0}",
+        "output": "json",
+        "x": 300,
+        "y": 320,
+        "wires": [
+            [
+                "c2851118.cfc8a"
+            ]
+        ]
+    },
+    {
+        "id": "8b02254e.62b808",
+        "type": "debug",
+        "z": "db7ea651.97d058",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "x": 830,
+        "y": 460,
+        "wires": []
+    },
+    {
+        "id": "3807b6b1.3f1d7a",
+        "type": "mqtt out",
+        "z": "db7ea651.97d058",
+        "name": "MQTT to janelator/room/light",
+        "topic": "janelator/room/light",
+        "qos": "",
+        "retain": "",
+        "broker": "908c33bc.ba4c1",
+        "x": 880,
+        "y": 620,
+        "wires": []
+    },
+    {
+        "id": "2e85b470.26a1cc",
+        "type": "inject",
+        "z": "db7ea651.97d058",
+        "name": "",
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "repeat": "7",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "x": 130,
+        "y": 540,
+        "wires": [
+            [
+                "8e92e4fe.e2f518"
+            ]
+        ]
+    },
+    {
+        "id": "8e92e4fe.e2f518",
+        "type": "template",
+        "z": "db7ea651.97d058",
+        "name": "",
+        "field": "payload",
+        "fieldType": "msg",
+        "format": "json",
+        "syntax": "plain",
+        "template": "{\"light\": 0}",
+        "output": "json",
+        "x": 300,
+        "y": 540,
+        "wires": [
+            [
+                "3807b6b1.3f1d7a"
+            ]
+        ]
+    },
+    {
+        "id": "e8c122ea.ba353",
+        "type": "debug",
+        "z": "db7ea651.97d058",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "x": 830,
+        "y": 680,
+        "wires": []
+    },
+    {
+        "id": "a792e04f.7d4ee",
+        "type": "debug",
+        "z": "db7ea651.97d058",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "x": 810,
+        "y": 240,
+        "wires": []
+    },
+    {
+        "id": "33a7c572.29939a",
+        "type": "mqtt in",
+        "z": "7b9f33d4.f4404c",
+        "name": "Subscribe to janelator/room/distance",
+        "topic": "janelator/room/distance",
+        "qos": "2",
+        "broker": "908c33bc.ba4c1",
+        "x": 290,
+        "y": 640,
+        "wires": [
+            [
+                "58be381d.aebdc8"
+            ]
+        ]
+    },
+    {
+        "id": "58be381d.aebdc8",
+        "type": "change",
+        "z": "7b9f33d4.f4404c",
+        "name": "Cast to Number",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "$number(msg.payload)",
+                "tot": "jsonata"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 200,
+        "y": 740,
+        "wires": [
+            [
+                "652c324e.470cbc"
+            ]
+        ]
+    },
+    {
+        "id": "c2700e2c.d179e",
+        "type": "change",
+        "z": "7b9f33d4.f4404c",
+        "name": "Abrir",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "500",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 790,
+        "y": 180,
+        "wires": [
+            [
+                "63d36e49.5a8e1",
+                "6e861a8c.4be4c4"
+            ]
+        ]
+    },
+    {
+        "id": "4dfbd7ad.05fef8",
+        "type": "change",
+        "z": "7b9f33d4.f4404c",
+        "name": "Fechar",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "1400",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 800,
+        "y": 260,
+        "wires": [
+            [
+                "63d36e49.5a8e1",
+                "6e861a8c.4be4c4"
+            ]
+        ]
+    },
+    {
+        "id": "63d36e49.5a8e1",
+        "type": "mqtt out",
+        "z": "7b9f33d4.f4404c",
+        "name": "MQTT to janelator/room/move",
+        "topic": "janelator/room/move",
+        "qos": "",
+        "retain": "",
+        "broker": "908c33bc.ba4c1",
+        "x": 1090,
+        "y": 220,
+        "wires": []
+    },
+    {
+        "id": "6e861a8c.4be4c4",
+        "type": "debug",
+        "z": "7b9f33d4.f4404c",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "x": 1050,
+        "y": 320,
+        "wires": []
+    },
+    {
+        "id": "f41f66ca.21d178",
+        "type": "rpi-gpio in",
+        "z": "db7ea651.97d058",
+        "name": "Rain Detector",
+        "pin": "29",
+        "intype": "tri",
+        "debounce": "25",
+        "read": true,
+        "x": 450,
+        "y": 180,
+        "wires": [
+            [
+                "35e65d29.4f7ea2"
+            ]
+        ]
+    },
+    {
+        "id": "2efffa6a.af0526",
+        "type": "ui_text",
+        "z": "7b9f33d4.f4404c",
+        "group": "651bd513.0e551c",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Estado da janela",
+        "format": "{{msg.payload}}",
+        "layout": "col-center",
+        "x": 850,
+        "y": 700,
+        "wires": []
+    },
+    {
+        "id": "5fb0de46.8e96a",
+        "type": "change",
+        "z": "7b9f33d4.f4404c",
+        "name": "Fechada",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "Fechada",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 640,
+        "y": 660,
+        "wires": [
+            [
+                "2efffa6a.af0526"
+            ]
+        ]
+    },
+    {
+        "id": "652c324e.470cbc",
+        "type": "switch",
+        "z": "7b9f33d4.f4404c",
+        "name": "",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "lt",
+                "v": "20",
+                "vt": "num"
+            },
+            {
+                "t": "gte",
+                "v": "20",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 410,
+        "y": 740,
+        "wires": [
+            [
+                "5fb0de46.8e96a"
+            ],
+            [
+                "9baa45af.ab7b58"
+            ]
+        ]
+    },
+    {
+        "id": "9baa45af.ab7b58",
+        "type": "change",
+        "z": "7b9f33d4.f4404c",
+        "name": "Aberta",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "Aberta",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 630,
+        "y": 720,
+        "wires": [
+            [
+                "2efffa6a.af0526"
+            ]
+        ]
+    },
+    {
+        "id": "7624a174.a99b9",
+        "type": "mqtt in",
+        "z": "7b9f33d4.f4404c",
+        "name": "Subscribe to janelator/room/rain",
+        "topic": "janelator/room/rain",
+        "qos": "2",
+        "broker": "908c33bc.ba4c1",
+        "x": 210,
+        "y": 100,
+        "wires": [
+            [
+                "76652649.86d208"
+            ]
+        ]
+    },
+    {
+        "id": "76652649.86d208",
+        "type": "change",
+        "z": "7b9f33d4.f4404c",
+        "name": "Cast to Number",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "$number(msg.payload)",
+                "tot": "jsonata"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 240,
+        "y": 200,
+        "wires": [
+            [
+                "f38cd5ef.93e5f8"
+            ]
+        ]
+    },
+    {
+        "id": "f38cd5ef.93e5f8",
+        "type": "switch",
+        "z": "7b9f33d4.f4404c",
+        "name": "",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "1",
+                "vt": "num"
+            },
+            {
+                "t": "else"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 450,
+        "y": 200,
+        "wires": [
+            [
+                "4dfbd7ad.05fef8"
+            ],
+            [
+                "c2700e2c.d179e"
+            ]
+        ]
+    },
+    {
+        "id": "35e65d29.4f7ea2",
+        "type": "delay",
+        "z": "db7ea651.97d058",
+        "name": "",
+        "pauseType": "rate",
+        "timeout": "5",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": true,
+        "x": 630,
+        "y": 180,
+        "wires": [
+            [
+                "383a8b59.c2fb34",
+                "a792e04f.7d4ee"
+            ]
+        ]
+    },
+    {
+        "id": "53d1c08.a72a24",
+        "type": "ui_button",
+        "z": "7b9f33d4.f4404c",
+        "name": "Abrir",
+        "group": "651bd513.0e551c",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "Abrir",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "icon": "",
+        "payload": "",
+        "payloadType": "num",
+        "topic": "",
+        "x": 650,
+        "y": 140,
+        "wires": [
+            [
+                "c2700e2c.d179e"
+            ]
+        ]
+    },
+    {
+        "id": "2864ec8c.68ed54",
+        "type": "ui_button",
+        "z": "7b9f33d4.f4404c",
+        "name": "Fechar",
+        "group": "651bd513.0e551c",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "Fechar",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "icon": "",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "",
+        "x": 640,
+        "y": 300,
+        "wires": [
+            [
+                "4dfbd7ad.05fef8"
+            ]
+        ]
+    },
+    {
+        "id": "7f857a41.dccb74",
+        "type": "suncron",
+        "z": "db7ea651.97d058",
+        "name": "",
+        "replay": "0",
+        "lat": "",
+        "lon": "",
+        "sunrisePayload": "",
+        "sunrisePayloadType": "string",
+        "sunriseTopic": "",
+        "sunriseOffsetType": 1,
+        "sunriseOffsetHours": 0,
+        "sunriseOffsetMinutes": 0,
+        "sunriseOffset": 0,
+        "sunriseEndPayload": "",
+        "sunriseEndPayloadType": "string",
+        "sunriseEndTopic": "",
+        "sunriseEndOffsetType": 1,
+        "sunriseEndOffsetHours": 0,
+        "sunriseEndOffsetMinutes": 0,
+        "sunriseEndOffset": 0,
+        "goldenHourEndPayload": "",
+        "goldenHourEndPayloadType": "string",
+        "goldenHourEndTopic": "",
+        "goldenHourEndOffsetType": 1,
+        "goldenHourEndOffsetHours": 0,
+        "goldenHourEndOffsetMinutes": 0,
+        "goldenHourEndOffset": 0,
+        "solarNoonPayload": "",
+        "solarNoonPayloadType": "string",
+        "solarNoonTopic": "",
+        "solarNoonOffsetType": 1,
+        "solarNoonOffsetHours": 0,
+        "solarNoonOffsetMinutes": 0,
+        "solarNoonOffset": 0,
+        "goldenHourPayload": "",
+        "goldenHourPayloadType": "string",
+        "goldenHourTopic": "",
+        "goldenHourOffsetType": 1,
+        "goldenHourOffsetHours": 0,
+        "goldenHourOffsetMinutes": 0,
+        "goldenHourOffset": 0,
+        "sunsetStartPayload": "",
+        "sunsetStartPayloadType": "string",
+        "sunsetStartTopic": "",
+        "sunsetStartOffsetType": 1,
+        "sunsetStartOffsetHours": 0,
+        "sunsetStartOffsetMinutes": 0,
+        "sunsetStartOffset": 0,
+        "sunsetPayload": "",
+        "sunsetPayloadType": "string",
+        "sunsetTopic": "",
+        "sunsetOffsetType": 1,
+        "sunsetOffsetHours": 0,
+        "sunsetOffsetMinutes": 0,
+        "sunsetOffset": 0,
+        "duskPayload": "",
+        "duskPayloadType": "string",
+        "duskTopic": "",
+        "duskOffsetType": 1,
+        "duskOffsetHours": 0,
+        "duskOffsetMinutes": 0,
+        "duskOffset": 0,
+        "nauticalDuskPayload": "",
+        "nauticalDuskPayloadType": "string",
+        "nauticalDuskTopic": "",
+        "nauticalDuskOffsetType": 1,
+        "nauticalDuskOffsetHours": 0,
+        "nauticalDuskOffsetMinutes": 0,
+        "nauticalDuskOffset": 0,
+        "nightPayload": "",
+        "nightPayloadType": "string",
+        "nightTopic": "",
+        "nightOffsetType": 1,
+        "nightOffsetHours": 0,
+        "nightOffsetMinutes": 0,
+        "nightOffset": 0,
+        "nadirPayload": "",
+        "nadirPayloadType": "string",
+        "nadirTopic": "",
+        "nadirOffsetType": 1,
+        "nadirOffsetHours": 0,
+        "nadirOffsetMinutes": 0,
+        "nadirOffset": 0,
+        "nightEndPayload": "",
+        "nightEndPayloadType": "string",
+        "nightEndTopic": "",
+        "nightEndOffsetType": 1,
+        "nightEndOffsetHours": 0,
+        "nightEndOffsetMinutes": 0,
+        "nightEndOffset": 0,
+        "nauticalDawnPayload": "",
+        "nauticalDawnPayloadType": "string",
+        "nauticalDawnTopic": "",
+        "nauticalDawnOffsetType": 1,
+        "nauticalDawnOffsetHours": 0,
+        "nauticalDawnOffsetMinutes": 0,
+        "nauticalDawnOffset": 0,
+        "dawnPayload": "",
+        "dawnPayloadType": "string",
+        "dawnTopic": "",
+        "dawnOffsetType": 1,
+        "dawnOffsetHours": 0,
+        "dawnOffsetMinutes": 0,
+        "dawnOffset": 0,
+        "x": 620,
+        "y": 480,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "973a41ed.c426",
+        "type": "suncron",
+        "z": "7b9f33d4.f4404c",
+        "name": "",
+        "replay": true,
+        "lat": "",
+        "lon": "",
+        "sunrisePayload": "",
+        "sunrisePayloadType": "str",
+        "sunriseTopic": "",
+        "sunriseOffsetType": 1,
+        "sunriseOffsetHours": 0,
+        "sunriseOffsetMinutes": 0,
+        "sunriseOffset": 0,
+        "sunriseEndPayload": "",
+        "sunriseEndPayloadType": "str",
+        "sunriseEndTopic": "",
+        "sunriseEndOffsetType": 1,
+        "sunriseEndOffsetHours": 0,
+        "sunriseEndOffsetMinutes": 0,
+        "sunriseEndOffset": 0,
+        "goldenHourEndPayload": "",
+        "goldenHourEndPayloadType": "str",
+        "goldenHourEndTopic": "",
+        "goldenHourEndOffsetType": 1,
+        "goldenHourEndOffsetHours": 0,
+        "goldenHourEndOffsetMinutes": 0,
+        "goldenHourEndOffset": 0,
+        "solarNoonPayload": "",
+        "solarNoonPayloadType": "str",
+        "solarNoonTopic": "",
+        "solarNoonOffsetType": 1,
+        "solarNoonOffsetHours": 0,
+        "solarNoonOffsetMinutes": 0,
+        "solarNoonOffset": 0,
+        "goldenHourPayload": "",
+        "goldenHourPayloadType": "str",
+        "goldenHourTopic": "",
+        "goldenHourOffsetType": 1,
+        "goldenHourOffsetHours": 0,
+        "goldenHourOffsetMinutes": 0,
+        "goldenHourOffset": 0,
+        "sunsetStartPayload": "",
+        "sunsetStartPayloadType": "str",
+        "sunsetStartTopic": "",
+        "sunsetStartOffsetType": 1,
+        "sunsetStartOffsetHours": 0,
+        "sunsetStartOffsetMinutes": 0,
+        "sunsetStartOffset": 0,
+        "sunsetPayload": "",
+        "sunsetPayloadType": "str",
+        "sunsetTopic": "",
+        "sunsetOffsetType": 1,
+        "sunsetOffsetHours": 0,
+        "sunsetOffsetMinutes": 0,
+        "sunsetOffset": 0,
+        "duskPayload": "",
+        "duskPayloadType": "str",
+        "duskTopic": "",
+        "duskOffsetType": 1,
+        "duskOffsetHours": 0,
+        "duskOffsetMinutes": 0,
+        "duskOffset": 0,
+        "nauticalDuskPayload": "",
+        "nauticalDuskPayloadType": "str",
+        "nauticalDuskTopic": "",
+        "nauticalDuskOffsetType": 1,
+        "nauticalDuskOffsetHours": 0,
+        "nauticalDuskOffsetMinutes": 0,
+        "nauticalDuskOffset": 0,
+        "nightPayload": "",
+        "nightPayloadType": "str",
+        "nightTopic": "",
+        "nightOffsetType": 1,
+        "nightOffsetHours": 0,
+        "nightOffsetMinutes": 0,
+        "nightOffset": 0,
+        "nadirPayload": "",
+        "nadirPayloadType": "str",
+        "nadirTopic": "",
+        "nadirOffsetType": 1,
+        "nadirOffsetHours": 0,
+        "nadirOffsetMinutes": 0,
+        "nadirOffset": 0,
+        "nightEndPayload": "",
+        "nightEndPayloadType": "str",
+        "nightEndTopic": "",
+        "nightEndOffsetType": 1,
+        "nightEndOffsetHours": 0,
+        "nightEndOffsetMinutes": 0,
+        "nightEndOffset": 0,
+        "nauticalDawnPayload": "",
+        "nauticalDawnPayloadType": "str",
+        "nauticalDawnTopic": "",
+        "nauticalDawnOffsetType": 1,
+        "nauticalDawnOffsetHours": 0,
+        "nauticalDawnOffsetMinutes": 0,
+        "nauticalDawnOffset": 0,
+        "dawnPayload": "",
+        "dawnPayloadType": "str",
+        "dawnTopic": "",
+        "dawnOffsetType": 1,
+        "dawnOffsetHours": 0,
+        "dawnOffsetMinutes": 0,
+        "dawnOffset": 0,
+        "x": 280,
+        "y": 460,
+        "wires": [
+            []
+        ]
+    }
+]

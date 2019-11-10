@@ -16,9 +16,9 @@ function displaySpinner(event) {
 }
 
 function changeRainStatus() {
-    rainLogo.src = "./raining.png"
+    rainLogo.src = "./assets/raining.png"
 }
 
 function changeLuminosityStatus() {
-    luminosityLogo.src = "./cloudySun.png";
+    luminosityLogo.src = "./assets/cloudySun.png";
 }

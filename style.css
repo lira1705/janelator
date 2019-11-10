@@ -1,0 +1,190 @@
+body{
+    background-color: #add8e6;
+    display: flex;
+}
+#windowBox{
+    background-color: white;
+    border-radius: 20px;
+    width: 95vw;
+    height: 90vh;
+    margin: 5vh auto;
+    max-width: 500px;
+    flex-direction: column;
+}
+#windowInfos{
+    height: 40%;
+    width: 80%;
+    position: relative;
+    box-shadow: 10px 12px 20px 0px rgba(0,0,0,0.3);
+    border-radius: 20px;
+    margin: 0 auto;
+    top: 10%;
+}
+#windowLogo{
+  position: relative;
+  height: 50%;
+  top: 10%;
+}
+#imgLogo{
+  height: 80%;
+  margin-left: 21%;
+}
+
+#circledSymbols {
+  height: 20%;
+  top: 10%;
+  position: relative;
+  left: 23%;
+  display: flex;
+  flex-direction: row;
+}
+
+#rain-logo{
+  height: 36%;
+  border-radius: 50%;
+  width: 15%;
+  border: 3px solid #add8e6;
+}
+#rainLogo{
+  margin-top: 10%;
+  height: 80%;
+  margin-left: 19%;
+}
+
+#luminosity-logo{
+  position: relative;
+  height: 36%;
+  left: 25%;
+  border-radius: 50%;
+  width: 15%;
+  border: 3px solid #add8e6;
+}
+#luminosityLogo{
+  margin-top: 10%;
+  height: 80%;
+  margin-left: 19%;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 240px;
+    height: 65px;
+    margin-top: 10%;
+    margin-left: 28%;
+  }
+  
+  .switch input {display:none;}
+  
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ca2222;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 56px;
+    width: 56px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color: #2ab934;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(176px);
+    -ms-transform: translateX(176px);
+    transform: translateX(176px);
+  }
+  
+  /*------ ADDED CSS ---------*/
+  .on
+  {
+    display: none;
+  }
+  
+  .on, .off
+  {
+    color: white;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 45%;
+    left: 50%;
+    font-size: 20px;
+    font-family: Verdana, sans-serif;
+  }
+  
+  input:checked+ .slider .on
+  {display: block;}
+  
+  input:checked + .slider .off
+  {display: none;}
+  
+  /*--------- END --------*/
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;}
+    li{
+        display: inline-block;
+    }
+
+    .itemLeft{
+        float: left;
+    }
+    .itemRight{
+        float: right;
+        margin-right: 20px;
+    }
+    li{
+        margin-top: 20px;
+    }
+
+
+  /*-------- SPINNER ---------*/
+
+  @import url(https://fonts.googleapis.com/css?family=Roboto:100);
+  
+  #loading {
+    margin-top: 5%;
+    margin-left: 45%;
+    width: 50px;
+    height: 50px;
+    border: 5px solid rgba(255,255,255,.3);
+    border-radius: 50%;
+    border-top-color: purple;
+    animation: spin 1s ease-in-out infinite;
+    -webkit-animation: spin 1s ease-in-out infinite;
+  }
+
+  .hidden {
+    visibility: hidden;
+  }
+
+  @keyframes spin {
+    to { -webkit-transform: rotate(360deg); }
+  }
+  @-webkit-keyframes spin {
+    to { -webkit-transform: rotate(360deg); }
+  }
